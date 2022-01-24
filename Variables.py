@@ -19,3 +19,14 @@ print(type("My Name"))
 print(type(1))
 print(type(1.1))
 print(type(False))
+
+
+# the datatype of variable can be changed
+my_var = 10
+my_var = "Hey"
+
+# explicit mention of datatypes
+my_var1: int = 20
+print(my_var1)
+my_var1 : str = "Hello"
+print(my_var1)
