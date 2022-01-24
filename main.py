@@ -16,5 +16,5 @@ print("multiple times printer || " * 4)
 
 # C# and CPython work the save way as java
 
-# We can use Java in Python (Jython implementaion not in CPython)
+# We can use Java in Python (Jython implementation not in CPython)
 # In case of Jython the end result is not Python bytecode, it is Java bytecode
