@@ -9,3 +9,13 @@ x, y, z = 1, 2, 3 # x is 1 y is 2 and z is 3
 # this also works
 a = b = 1
 
+# in terms of typing there are two types of programming languages
+# 1. Static : C++, C#, Java etc. # datatype must be explicitly mentioned # datatypes are determined at compile time
+# 2. Dynamic: JavaScript, Ruby, Python etc. # no need to explicitly mention datatype # datatypes are determined at runtime
+
+# to know datatype of a variable
+print("Printing Datatypes")
+print(type("My Name"))
+print(type(1))
+print(type(1.1))
+print(type(False))
