@@ -27,6 +27,21 @@ my_var = "Hey"
 
 # explicit mention of datatypes
 my_var1: int = 20
+# id gives memory location
 print(my_var1)
+print(id(my_var1))
 my_var1 : str = "Hello"
 print(my_var1)
+print(id(my_var1))
+
+# the datatypes in python are immutable, so when we change the value of variable to same or different datatype new memory is allocated.
+m = 10
+print(id(m))
+m = 20
+print(id(m))
+
+#lists are mutable hence the address does not change when we modify l
+l = [1, 2, 3]
+print(id(l))
+l.append(4)
+print(id(l))
