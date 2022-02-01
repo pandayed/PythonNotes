@@ -48,3 +48,20 @@ print(full)
 # we can put any expression in curly braces
 
 print(f"{2+3}")
+
+# some useful string methods
+myName = "Lal Bihari Pandey"
+print(myName.upper())
+print(myName.lower())
+print(myName.title()) # first letter of every word is capitalised # used in blog post titles
+
+# remove extra white sapces
+whiteSpaced = "  Word  "
+print(whiteSpaced.strip()) # the string itself remains unchanged
+print(whiteSpaced.lstrip())
+print(whiteSpaced.rstrip())
+
+# find
+print(whiteSpaced.find("rd")) #index of rd
+print(whiteSpaced.replace("W", "L"))
+print("Lal" in myName) # Prints true/false
