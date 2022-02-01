@@ -62,6 +62,6 @@ print(whiteSpaced.lstrip())
 print(whiteSpaced.rstrip())
 
 # find
-print(whiteSpaced.find("rd")) #index of rd
+print(whiteSpaced.find("rd")) # index of rd
 print(whiteSpaced.replace("W", "L"))
 print("Lal" in myName) # Prints true/false
