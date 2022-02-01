@@ -17,3 +17,23 @@ print(myName[:])
 # whenever we access individual characters or use a part of string the characters are copied from string to some other memory location
 print(id(myName))
 print(id(myName[0]))
+
+# Escape Sequences
+# Printing Double Quotes
+
+# single quotes also work
+# in this case we can directly print double quotes
+message = 'Python is cool'
+message = 'Python is "Cool"'
+print(message)
+
+# writing strings in '' is not good
+# we have escape sequences for that
+
+escapeSequences = "\'  \"  \\  \n"
+print(escapeSequences)
+
+# triple quotes
+multiLineString = """Here
+ I
+ am"""
