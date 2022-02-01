@@ -37,3 +37,14 @@ print(escapeSequences)
 multiLineString = """Here
  I
  am"""
+
+# concatenation works but we have
+
+first = "Lal"
+mid = "Bihari"
+full = f"{first} {mid}" # F or f both work # f prefix means formatted string
+print(full)
+
+# we can put any expression in curly braces
+
+print(f"{2+3}")
