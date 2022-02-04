@@ -40,3 +40,23 @@ for name in names:
         print("Found")
 else:
     print("Not found")
+
+
+# while loops
+i=0
+while i != 5 :
+    i=i+1
+    print(i)
+    if i==10:
+        break
+else:
+    print("Loop was not broken")
+
+i=0
+while i != 5 :
+    i=i+1
+    print(i)
+    if i==2:
+        break
+else:
+    print("Loop was not broken")
