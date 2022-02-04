@@ -27,7 +27,8 @@ myTuple = (1, 2, "Name")
 print(returnDob())
 
 # keyword arguments
-# TODO
+print("Keyword arguments called")
+takeNameSayName(lName = "Pandey", fName = "Lal")
 
 def defaultName(fName, lName="Pandey"):
     print(fName + lName)
@@ -54,3 +55,15 @@ def adder(*nums):
 
 print(adder(1,2,3,4))
 
+
+
+# Arguments xxarg
+# xxargs are received as key value pairs
+def myFullName(**names):
+    print(names)
+    # key is put in double quotes
+    print(names["fName"])
+    print(names["mName"])
+
+
+myFullName(fName="Lal", mName="Bihari", lName = "Pandey")
