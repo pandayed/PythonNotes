@@ -34,3 +34,9 @@ if x>y or x>10:
 # chaining of operators
 if 10<x<20:
     print("x lies between 10 and 20")
+
+
+# ternary operator
+age = 20
+message = "Eligible" if age>=18 else "Not elegible"
+print(message)
