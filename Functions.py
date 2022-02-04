@@ -39,3 +39,18 @@ defaultName("Lal Bihari")
 # fun with explicit mentions
 def myFun(a: int, b) -> tuple:
     return (a, b)
+
+# arguments xarg for arbitrary number of arguments
+# in case of xarg the values are received in tuple
+def adder(*nums):
+    print(nums)
+    total = 0
+    for x in nums:
+        total+=x
+        print(x)
+    return total
+
+
+
+print(adder(1,2,3,4))
+
