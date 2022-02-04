@@ -1,3 +1,8 @@
+import math
+
+import main
+
+
 x = 10
 
 # 0b prefix is used for binary representation
@@ -44,3 +49,19 @@ x/=2
 x*=2
 
 # in python we do not have increment and decrement operators
+
+# in python we do not have constants, all we have are variables
+
+# but conventionally we use uppercase for variables of which values should not be modified
+PI= 3.14 # we can modify PI we should not
+
+x = 3.145
+print(round(x)) # rounds off to integer
+x=-10
+print(abs(x)) # prints absolute value
+
+# whenever you search for something in python use the version of python
+
+# using math module
+print(math.floor(3.14))
+print(math.ceil(3.14))
