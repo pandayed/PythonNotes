@@ -65,3 +65,23 @@ print(abs(x)) # prints absolute value
 # using math module
 print(math.floor(3.14))
 print(math.ceil(3.14))
+
+# type conversion
+# input in python is received as string so we need to convert that
+# since the input are not implicitly converted, python and such languages are called strongly typed languages
+# languages which do auto type conversion of input are called weakly typed languages
+x = input("x: ")
+print(x)
+
+# type conversions
+print(int(x))
+print(float(x))
+print(bool(x))
+
+
+# false values in python
+# empty string i.e. ""
+# 0
+# empty list i.e. []
+# None # None is like NULL in cpp
+# except these all are true
