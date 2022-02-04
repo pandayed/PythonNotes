@@ -26,3 +26,17 @@ print(type(range(5)))
 print([1, 2, 3, 4, 5])
 
 
+# break
+names = ["lal", "vishal"]
+for name in names:
+    if name.startswith("l"):
+        print("Found")
+        break
+
+# for else
+# else comes after for and is executed if for does not break
+for name in names:
+    if(name.startswith("P")):
+        print("Found")
+else:
+    print("Not found")
