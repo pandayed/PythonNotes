@@ -35,3 +35,15 @@ print(mychars[3:11:2])
 print(mychars[::2])
 # reading items in reverse order
 print(mychars[::-1])
+
+
+# Lists Unpacking
+numbers = [1, 2, 3]
+# number of variables on left must be equal to number of items in list
+one, two, three = numbers
+
+# to get only first few elements
+# remaining will be a list of remaining elements
+first , second, *remaining = numbers
+
+first, *between, last = numbers
