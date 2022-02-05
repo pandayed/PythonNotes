@@ -24,3 +24,14 @@ print(mychars)
 
 # len function
 print(len(mychars))
+
+# accessing items in a list
+print(mychars[0], mychars[-1])
+
+# slicing
+# slicing does not affect the original iterable
+print(mychars[11:])
+print(mychars[3:11:2])
+print(mychars[::2])
+# reading items in reverse order
+print(mychars[::-1])
