@@ -47,3 +47,18 @@ one, two, three = numbers
 first , second, *remaining = numbers
 
 first, *between, last = numbers
+
+
+# looping over lists
+for name in names:
+    print(name)
+
+# getting index with item
+# enumerate return tuple of two items
+for name in enumerate(names):
+    print(name)
+    print("index " + str(name[0]) + " name " + str(name[1]))
+
+# getting indices this way is ugly so we use list unpacking
+for index, name in enumerate(names):
+    print(index, name)
