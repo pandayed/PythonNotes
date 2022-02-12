@@ -108,3 +108,38 @@ if "orange" in fruits:
 # to get number of occurrences of the element
 print(fruits.count("apple"))
 print(fruits.count("orange"))
+
+
+# sort
+nums = [2, 2, 16, 78 ,3]
+# in ascending
+nums.sort()
+print(nums)
+# in descending
+nums.sort(reverse=True)
+print(nums)
+
+# sorted does not modify the original list
+# it returns a list which is sorted
+nums2 = sorted(nums)
+print(nums2)
+nums3 = sorted(nums, reverse=True)
+print(nums3)
+
+# sorting comples lists
+items = [
+    ("i1", 10),
+    ("i2", 0)
+]
+
+items.sort()
+print(items)
+# nothing changes in this case because python does not know how to sort this
+
+
+# this fun will tell python that list should be sorted on the basis of element at index 1 in tuple
+def sorter(item):
+    return item[1]
+
+items.sort(key=sorter)
+print(items)
