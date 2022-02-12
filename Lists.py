@@ -62,3 +62,34 @@ for name in enumerate(names):
 # getting indices this way is ugly so we use list unpacking
 for index, name in enumerate(names):
     print(index, name)
+
+
+# adding items to list
+fruits = ["apple", "banana"]
+print(fruits)
+# insertion at end
+fruits.append("guava")
+print(fruits)
+# insertion at given index
+fruits.insert(0, "Grapes")
+
+# removing
+# at end
+# for removal at end use pop without passing index
+fruits.pop()
+print(fruits)
+fruits.pop(0)
+print(fruits)
+# removes the first occurrence of the value
+fruits.remove("banana")
+# to remove all the instances of a value iterate over the list
+
+#del : to remove item at an index or over a range
+fruits = ["apple", "banana", "guava", "grapes", "papaya", "anaar"]
+del fruits[1]
+print(fruits)
+del fruits[2:4]
+print(fruits)
+
+# deleting all objects in a list
+fruits.clear()
