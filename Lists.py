@@ -93,3 +93,18 @@ print(fruits)
 
 # deleting all objects in a list
 fruits.clear()
+
+# finding items
+fruits = ["apple", "banana", "guava", "grapes", "papaya", "anaar"]
+print(fruits.index("apple"))
+# trying to find something which does not exist gives error called ValueError
+# most of the languages return -1 but python does not
+# print(fruits.index("orange")) # this gives error
+
+# so before finding index one must check if the item exists
+if "orange" in fruits:
+    print(fruits.index("orange"))
+
+# to get number of occurrences of the element
+print(fruits.count("apple"))
+print(fruits.count("orange"))
