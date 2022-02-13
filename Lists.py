@@ -143,3 +143,11 @@ def sorter(item):
 
 items.sort(key=sorter)
 print(items)
+
+
+# lambda functions : simple, one lined, anonymous functions
+# lambda keyword is used
+# syntax: lambda parameter:return statement
+items.append(("i3", -10))
+items.sort(key= lambda item:item[1])
+print(items)
