@@ -151,3 +151,21 @@ print(items)
 items.append(("i3", -10))
 items.sort(key= lambda item:item[1])
 print(items)
+
+# let us say we want to create a list of numbers from the existing list
+# basically we want to extract all the nos. from items and store them in a diff list
+
+# we can use map function here
+# map(list, lambda fun)
+
+items = [
+    ("item3", 3),
+    ("item2", 2),
+    ("item1", 1)
+]
+nos = map(lambda num: items[1], items)
+print(nos)
+# map fun returns map object
+# to convert iterable into a list we use list fun
+nosList = list(map(lambda item: item[1], items))
+print(nosList)
