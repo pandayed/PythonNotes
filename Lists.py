@@ -178,3 +178,14 @@ x = filter(lambda item:item[1]>1, items)
 print(x)
 y = list(x)
 print(y)
+
+# list comprehensions
+# we can apply an expression on each item of an iterable as
+# [expression for item in items]
+# this is called list comprehension and is preferred over map
+a = [item[1] for item in items]
+print(a)
+
+# list comprehension for filtering
+b = [item[1] for item in items if item[1]>1]
+print(b)
