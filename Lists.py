@@ -169,3 +169,12 @@ print(nos)
 # to convert iterable into a list we use list fun
 nosList = list(map(lambda item: item[1], items))
 print(nosList)
+
+# filtering items
+# filter fun takes a fun and an iterable
+# if the return value of lambda is true then item will be returned else not
+
+x = filter(lambda item:item[1]>1, items)
+print(x)
+y = list(x)
+print(y)
