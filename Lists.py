@@ -189,3 +189,20 @@ print(a)
 # list comprehension for filtering
 b = [item[1] for item in items if item[1]>1]
 print(b)
+
+# zip fun
+# to combine multiple lists
+# it gives a zip object which is a list of tuples
+# each tuple is a group of nth element from each list
+# we can pass as many iterables as we want
+l1 = [1, 2,3]
+l2 = [10, 20, 30]
+x = zip(l1, l2)
+y = list(x)
+print(x)
+print(y)
+
+# zip fun merges lists upto last element in the shortest elemnt
+l1 = [1]
+l2 = [10, 20]
+print(list(zip(l1, l2)))
