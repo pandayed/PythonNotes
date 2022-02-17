@@ -1,3 +1,5 @@
+from sys import getsizeof
+
 # Dictionaries are basically maps
 
 # x and y are keys and 1 and 2 are values
@@ -53,3 +55,18 @@ mySet = {x*2 for x in range(5)}
 print(mySet)
 myDict = {x: x*2 for x in range(5)}
 print(myDict)
+
+# Generator Expressions
+# when we use () in comprehensions generator expressions are returned
+# Generator expressions do not store all the values but when we iterate them they spit out a value on each iteration
+# they are used when we have a large or infinite data set
+# since they do not store all the values we cannot get the len of the generator expressions
+
+values = (x*2 for x in range(10000))
+# print(len(values)) # error will be thrown
+# but we can get the size
+print(getsizeof(values))
+
+# we cannot print the whole expression at a time but we can iterate and access elements one by one
+for x in values:
+    print(x)
