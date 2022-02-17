@@ -42,3 +42,14 @@ for item in point.items():
 # unpacking tuple
 for key, value in point.items():
     print(key, value)
+
+
+# Dictionaries Comprehension
+# Comprehensions are same as lists for set and dictionaries, just the brackets differ
+
+myList = [x*2 for x in range(5)]
+print(myList)
+mySet = {x*2 for x in range(5)}
+print(mySet)
+myDict = {x: x*2 for x in range(5)}
+print(myDict)
