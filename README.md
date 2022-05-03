@@ -1,2 +1,2 @@
-# LearningPython  
-Feel free to fork, make changes and send pull requests to make this repo better.
+# Python Notes
+Feel free to use, review and contribute to make this repo better.
