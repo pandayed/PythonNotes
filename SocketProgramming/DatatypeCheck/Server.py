@@ -16,13 +16,15 @@ while True:
     c, addr = s.accept()
     datarecv = c.recv(1024).decode()
     typeofdata = 'INT'
+    print("Connected with client: ", addr)
+    print("Data:", datarecv)
     for i in datarecv:
         if (i == '~' or i == '!' or i == '#' or i == '$' or i == '%' or i == '^' or i == '&' or i == '*'):
             typeofdata = 'Special Character'
             break
     for i in datarecv:
         if (i == '.'):
-            typeofdata = 'Float'
+            typeofdata = 'Decimal Number'
             break
     for i in datarecv:
         if (i >= 'a' and i <= 'z'):
@@ -33,4 +35,4 @@ while True:
             break
     if (len(datarecv) == 1 and typeofdata == 'String'):
         typeofdata = 'Character'
-    c.send(bytes(f"{datarecv} is the data you sent whose data type is {typeofdata} ", 'utf-8'))
+    c.send(bytes(f"{datarecv} : {typeofdata} ", 'utf-8'))
